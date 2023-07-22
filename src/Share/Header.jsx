@@ -3,7 +3,10 @@ import React from 'react';
 const Header = () => {
     const navItem = <>
         <li><a>Home</a></li>
-        <li><a>Item 3</a></li></>
+        <li><a>Colleges</a></li>
+        <li><a>Admission</a></li>
+        <li><a>My College</a></li>
+    </>
     return (
         <div>
             <div className="navbar bg-base-100">
@@ -24,7 +27,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <a className="btn">Login</a>
                 </div>
             </div>
 
