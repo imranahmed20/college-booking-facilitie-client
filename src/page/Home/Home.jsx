@@ -12,7 +12,6 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <Collage></Collage>
-            <Card></Card>
         </div>
     );
 };

@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Card = () => {
+const Card = ({ booking }) => {
+    const { _id, collegeName, collegeImage, admissionDate, collegeDetail } = booking;
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
-            <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            <figure><img src={collegeImage} alt="Shoes" /></figure>
             <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                <h2 className="card-title text-2xl">{collegeName}</h2>
+                <h4 className="text-xl font-semibold">Admission Date: {admissionDate}</h4>
+                <p>{collegeDetail}</p>
+                <div className="card-actions ">
+                    <Link to={`/collage/${_id}`}><button className="btn btn-primary">View Details</button></Link>
                 </div>
             </div>
         </div>

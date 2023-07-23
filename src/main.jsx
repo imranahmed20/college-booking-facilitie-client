@@ -11,6 +11,7 @@ import Home from './page/Home/Home';
 import Login from './page/Login/Login';
 import AuthProvider from './Provider/AuthProvider';
 import Register from './page/Resgister/Register';
+import CollageDetail from './page/CollageDetail/CollageDetail';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/collage/:id',
+        element: <CollageDetail></CollageDetail>,
+        loader: ({ params }) => fetch(`http://localhost:5000/collage/${params.id}`)
       },
       {
         path: '/login',
