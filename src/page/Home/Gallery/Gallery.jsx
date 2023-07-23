@@ -8,29 +8,32 @@ import gallery6 from '../../../assets/image/graduate-6.avif'
 
 const Gallery = () => {
     return (
-        <div>
-            <h1 className='text-5xl font-semibold text-white text-center mt-40 mb-16'>Our Gallery</h1>
-            <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
-                <div>
-                    <img src={gallery1} alt="" />
-                </div>
-                <div>
-                    <img src={gallery4} alt="" />
-                </div>
-                <div>
-                    <img src={gallery3} alt="" />
-                </div>
-                <div>
-                    <img src={gallery2} alt="" />
-                </div>
-                <div>
-                    <img src={gallery5} alt="" />
-                </div>
-                <div>
-                    <img src={gallery6} alt="" />
+        <>
+            <div className='container mx-auto'>
+                <h1 className='text-5xl font-semibold text-white text-center mt-40 mb-16'>Our Gallery</h1>
+                <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
+                    <div>
+                        <img src={gallery1} alt="" />
+                    </div>
+                    <div>
+                        <img src={gallery4} alt="" />
+                    </div>
+                    <div>
+                        <img src={gallery3} alt="" />
+                    </div>
+                    <div>
+                        <img src={gallery2} alt="" />
+                    </div>
+                    <div>
+                        <img src={gallery5} alt="" />
+                    </div>
+                    <div>
+                        <img src={gallery6} alt="" />
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
+
     );
 };
 
