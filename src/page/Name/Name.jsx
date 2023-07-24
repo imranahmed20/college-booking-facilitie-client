@@ -7,8 +7,7 @@ const Name = ({ allName }) => {
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
-
-                <Link><h2 className="card-title text-2xl">{collegeName}</h2></Link>
+                <Link to={`/name/${_id}`}><h2 className="card-title text-2xl">{collegeName}</h2></Link>
             </div>
 
         </div>

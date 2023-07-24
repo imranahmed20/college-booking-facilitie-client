@@ -15,6 +15,8 @@ import CollageDetail from './page/CollageDetail/CollageDetail';
 import PrivetRouter from './Router/PrivetRouter';
 import AllCollages from './page/AllCollages/AllCollages';
 import Admission from './page/Admition/Admission';
+import AdmissionForm from './page/AdmissionForm/AdmissionForm';
+import MyCollage from './page/MyCollage/MyCollage';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,9 +36,18 @@ const router = createBrowserRouter([
         element: <Admission></Admission>
       },
       {
+        path: '/myCollage',
+        element: <MyCollage></MyCollage>
+      },
+      {
         path: '/collage/:id',
         element: <PrivetRouter><CollageDetail></CollageDetail></PrivetRouter>,
         loader: ({ params }) => fetch(`http://localhost:5000/collage/${params.id}`)
+      },
+      {
+        path: '/name/:id',
+        element: <PrivetRouter><AdmissionForm></AdmissionForm></PrivetRouter>,
+        loader: ({ params }) => fetch(`http://localhost:5000/name/${params.id}`)
       },
 
       {

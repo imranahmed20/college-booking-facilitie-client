@@ -14,7 +14,8 @@ const Header = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/allCollage'>Colleges</Link></li>
         <li><Link to='/admission'>Admission</Link></li>
-        <li><a>My College</a></li>
+        <li><Link to='/myCollage'>My College</Link></li>
+
     </>
     return (
         <div className='container mx-auto'>
