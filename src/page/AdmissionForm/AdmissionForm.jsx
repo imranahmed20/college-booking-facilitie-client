@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const AdmissionForm = () => {
+    const { user } = useContext(AuthContext)
     const navigate = useNavigate()
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -83,7 +85,7 @@ const AdmissionForm = () => {
                         <label className="label">
                             <span className="label-text">Candidate Email</span>
                         </label>
-                        <input type="email" name='email' placeholder="Email" className="input input-bordered" />
+                        <input type="email" name='email' defaultValue={user.email} placeholder="Email" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">

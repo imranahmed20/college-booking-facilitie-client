@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 
 const CollageDetail = () => {
     const details = useLoaderData()
@@ -16,7 +17,10 @@ const CollageDetail = () => {
                         <h4 className="font-semibold mb-3"> Research History: {researchHistoryDetail}</h4>
                         <h4 className=" font-semibold mb-1">Sports: {sports}</h4>
                         <p>{collegeDetail}</p>
-                        <Link to="/">  <button className="btn btn-primary mt-1">Go Home</button></Link>
+                        <div className='flex mt-3'>
+                            <h2 className='mr-3'> Rating: </h2>
+                            <span><FaStar className='text-orange-400 text-2xl mr-2'></FaStar></span><span><FaStar className='text-orange-400 text-2xl mr-2'></FaStar></span><span><FaStar className='text-orange-400 text-2xl mr-2'></FaStar></span><span><FaStar className='text-orange-400 text-2xl mr-2'></FaStar></span><span><FaStarHalfAlt className='text-orange-400 text-2xl'></FaStarHalfAlt></span></div>
+                        <Link to="/">  <button className="btn btn-primary mt-3">Go Home</button></Link>
                     </div>
                 </div>
             </div>
