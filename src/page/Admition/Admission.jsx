@@ -13,7 +13,7 @@ const Admission = () => {
     })
     return (
         <div className='mb-10'>
-            <h1 className='text-5xl font-semibold text-white text-center mt-10 mb-16'>Select College</h1>
+            <h1 className='text-5xl font-semibold text-orange-600 text-center mt-10 mb-16'>Select College</h1>
             <div className='grid md:grid-cols-3 gap-10 container mx-auto '>
                 {
                     name.map(allName => <Name key={allName._id} allName={allName}></Name>)

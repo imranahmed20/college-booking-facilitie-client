@@ -10,7 +10,7 @@ const Gallery = () => {
     return (
         <>
             <div className='container mx-auto'>
-                <h1 className='text-5xl font-semibold text-white text-center mt-40 mb-16'>Our Gallery</h1>
+                <h1 className='text-5xl font-bold text-orange-500 text-center mt-40 mb-16'>Our Gallery</h1>
                 <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
                     <div>
                         <img src={gallery1} alt="" />
