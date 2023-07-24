@@ -13,7 +13,7 @@ const AllCollages = () => {
     return (
         <div>
             <h1 className='text-5xl font-semibold text-white text-center mt-10 mb-16'>All College</h1>
-            <div className='grid grid-cols-3 gap-5 container mx-auto'>
+            <div className='grid md:grid-cols-3 gap-5 container mx-auto'>
                 {
                     collage.map(booking => <Booking key={booking._id} booking={booking}></Booking>)
                 }
