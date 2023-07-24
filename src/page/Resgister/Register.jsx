@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { updateProfile } from 'firebase/auth';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const { createUser } = useContext(AuthContext)
@@ -25,6 +26,13 @@ const Register = () => {
                 updateProfile(result.user, { displayName: name, photoURL: photo })
                 const user = result.user;
                 console.log(user)
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'User Register Successful, Please Login',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 form.reset()
                 navigate('/login')
             })
@@ -80,7 +88,7 @@ const Register = () => {
                         </form>
                         <p className='text-red-600'><small> {error}</small></p>
                         <p className='mt-3 p-5'>Already have an account, Please <Link to="/login" className='btn btn-link text-white'>Login</Link></p>
-                       
+
                     </div>
                 </div>
             </div>

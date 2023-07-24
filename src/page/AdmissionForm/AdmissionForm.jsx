@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Swal from 'sweetalert2';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AdmissionForm = () => {
     const { user } = useContext(AuthContext)
@@ -41,9 +41,15 @@ const AdmissionForm = () => {
             .then(data => {
                 console.log(data)
                 if (data.insertedId) {
-                    alert('Submit')
-                    // navigate('/')
-                    // form.reset()
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'User add detail successful',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                    navigate('/')
+                    form.reset()
                 }
             })
 
