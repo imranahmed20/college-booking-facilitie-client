@@ -13,7 +13,7 @@ const Header = () => {
     const navItem = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/allCollage'>Colleges</Link></li>
-        <li><a>Admission</a></li>
+        <li><Link to='/admission'>Admission</Link></li>
         <li><a>My College</a></li>
     </>
     return (

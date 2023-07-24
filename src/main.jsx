@@ -14,6 +14,7 @@ import Register from './page/Resgister/Register';
 import CollageDetail from './page/CollageDetail/CollageDetail';
 import PrivetRouter from './Router/PrivetRouter';
 import AllCollages from './page/AllCollages/AllCollages';
+import Admission from './page/Admition/Admission';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: '/allCollage',
         element: <AllCollages></AllCollages>
+      },
+      {
+        path: '/admission',
+        element: <Admission></Admission>
       },
       {
         path: '/collage/:id',
