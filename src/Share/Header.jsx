@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContext)
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+
+    }
     const navItem = <>
         <li><Link to='/'>Home</Link></li>
-        <li><a>Colleges</a></li>
+        <li><Link to='/allCollage'>Colleges</Link></li>
         <li><a>Admission</a></li>
         <li><a>My College</a></li>
     </>
@@ -28,7 +36,15 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/login'> <button className="btn btn-warning">Login</button></Link>
+                    {
+                        user ?
+                            <img style={{ width: '40px', height: '40px' }} title={user?.displayName} className='rounded-full mr-5' src={user?.photoURL} alt="" />
+                            :
+                            <></>
+                    }
+                    {
+                        user ? <button className="btn btn-active btn-primary" onClick={handleLogOut}>LogOut</button> : <Link to='/login'> <button className="btn btn-warning">Login</button></Link>
+                    }
                 </div>
             </div>
 

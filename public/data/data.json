@@ -1,50 +1,38 @@
 [
     {
-        "collegeName": "Adamjee Cantonment College",
-        "collegeImage": "https://edunews.com.bd/wp-content/uploads/2020/06/adamjee-cantonment-college-min.jpg",
-        "collegeDetail": "Adamjee Cantonment College is an intermediate college in Dhaka. In 1960, it was established. It is situated in the center of Dhaka Cantonment",
-        "admissionDate": "2023-09-01",
-        "researchHistoryDetail": "Adamjee Cantonment College has a rich history of groundbreaking research in various fields.",
-        "sports": "Basketball, Soccer, Tennis"
+        "collegeName": "Adamjee Cantonment College"
     },
     {
-        "collegeName": "Viquarunnisa Noon College",
-        "collegeImage": "https://img.freepik.com/free-photo/working-urban-singapore-amazing-complex_1122-1722.jpg?size=626&ext=jpg&ga=GA1.2.426682711.1665547352&semt=ais",
-        "collegeDetail": "Viqarunnisa Noon School and College is a girls-higher secondary school in Bangladesh. It is one of the best girls' college in Bangladesh.Viquarunnisa Noon College is one of the best colleges in Bangladesh for girls.",
-        "admissionDate": "2023-08-15",
-        "researchHistoryDetail": "Viquarunnisa Noon College has a strong emphasis on interdisciplinary research projects.",
-        "sports": "Football, Volleyball, Swimming"
+        "collegeName": "Viquarunnisa Noon College"
     },
     {
-        "collegeName": "Dhaka College",
-        "collegeImage": "https://img.freepik.com/free-photo/red-buildings-households_1127-2024.jpg?size=626&ext=jpg&ga=GA1.2.426682711.1665547352&semt=ais",
-        "collegeDetail": "Dhaka Commerce College is the perfect place for Commerce student. You can learn lots of thing from this institute. Not only that, you will have lots of fun.",
-        "admissionDate": "2023-07-30",
-        "researchHistoryDetail": "Dhaka College is at the forefront of technological innovations.The Best Government College: Rajshahi College · Best Non Government College: Dhaka Commerce College ·",
-        "sports": "Cricket, Badminton, Athletics"
+        "collegeName": "Dhaka College"
     },
     {
-        "collegeName": "Rajuk Uttara Model College",
-        "collegeImage": "https://img.freepik.com/free-photo/glass-buildings-seen-from-lake_1127-2268.jpg?size=626&ext=jpg&ga=GA1.2.426682711.1665547352&semt=ais",
-        "collegeDetail": "Rajuk Uttara Model College (RUMC) is a co-educational secondary school in Bangladesh. It is situated almost a kilometer north from Shahjalal International",
-        "admissionDate": "2023-09-15",
-        "researchHistoryDetail": "Rajuk Uttara Model College focuses on research related to business and economics.",
-        "sports": "Table Tennis, Golf, Squash"
+        "collegeName": "Rajuk Uttara Model College"
     },
     {
-        "collegeName": "Dhaka Commerce College",
-        "collegeImage": "https://img.freepik.com/free-photo/school-teaching-building_1205-823.jpg?size=626&ext=jpg&ga=GA1.2.426682711.1665547352&semt=ais",
-        "collegeDetail": "A prestigious medical college with state-of-the-art facilities.",
-        "admissionDate": "2023-08-01",
-        "researchHistoryDetail": "Dhaka Commerce College is the perfect place for Commerce student. You can learn lots of thing from this institute. Not only that, you will have lots of fun.",
-        "sports": "Swimming, Basketball, Chess"
+        "collegeName": "Dhaka Commerce College"
     },
     {
-        "collegeName": "Notre Dame College, Dhaka",
-        "collegeImage": "https://img.freepik.com/free-photo/architecture-independence-palace-ho-chi-minh-city_181624-21243.jpg?size=626&ext=jpg&ga=GA1.2.426682711.1665547352&semt=ais",
-        "collegeDetail": "Dhaka's Notre Dame College and Demra's Shamsul Haque Khan School & College jointly keep the eight positions with 93.04 points. Jalalabad Cantonment Public ",
-        "admissionDate": "2023-07-20",
-        "researchHistoryDetail": "Dhaka's Notre Dame College  encourages research projects that merge art with technology.",
-        "sports": "Dance, Yoga, Archery"
+        "collegeName": "Rajshahi University"
+    },
+    {
+        "collegeName": "Chittagong College"
+    },
+    {
+        "collegeName": "Milestone College"
+    },
+    {
+        "collegeName": "Comilla Victoria Govt. Collage"
+    },
+    {
+        "collegeName": "Mirzapur Cadet College"
+    },
+    {
+        "collegeName": "National Ideal College"
+    },
+    {
+        "collegeName": "Notre Dame College, Dhaka"
     }
 ]
