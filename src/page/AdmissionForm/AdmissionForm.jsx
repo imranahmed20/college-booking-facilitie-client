@@ -30,7 +30,7 @@ const AdmissionForm = () => {
 
         }
         console.log(submit)
-        fetch('http://localhost:5000/submit', {
+        fetch('https://collage-booking-server-ecru.vercel.app/submit', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

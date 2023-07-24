@@ -4,7 +4,7 @@ import Name from '../Name/Name';
 const Admission = () => {
     const [name, setName] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/name')
+        fetch('https://collage-booking-server-ecru.vercel.app/name')
             .then(res => res.json())
             .then(data => {
                 setName(data)

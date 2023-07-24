@@ -5,7 +5,7 @@ import MyCollageDetail from '../MyCollageDetail/MyCollageDetail';
 const MyCollage = () => {
     const { user } = useContext(AuthContext)
     const [myCollage, setMyCollage] = useState([])
-    const url = `http://localhost:5000/submit?email=${user.email}`;
+    const url = `https://collage-booking-server-ecru.vercel.app/submit?email=${user.email}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

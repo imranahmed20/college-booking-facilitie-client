@@ -37,17 +37,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/myCollage',
-        element: <MyCollage></MyCollage>
+        element: <PrivetRouter><MyCollage></MyCollage></PrivetRouter>
       },
       {
         path: '/collage/:id',
         element: <PrivetRouter><CollageDetail></CollageDetail></PrivetRouter>,
-        loader: ({ params }) => fetch(`http://localhost:5000/collage/${params.id}`)
+        loader: ({ params }) => fetch(`https://collage-booking-server-ecru.vercel.app/collage/${params.id}`)
       },
       {
         path: '/name/:id',
         element: <PrivetRouter><AdmissionForm></AdmissionForm></PrivetRouter>,
-        loader: ({ params }) => fetch(`http://localhost:5000/name/${params.id}`)
+        loader: ({ params }) => fetch(`https://collage-booking-server-ecru.vercel.app/name/${params.id}`)
       },
 
       {

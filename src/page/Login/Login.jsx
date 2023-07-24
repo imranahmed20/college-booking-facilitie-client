@@ -74,6 +74,7 @@ const Login = () => {
                         <p className='text-center mb-3'>Or</p>
                         <button onClick={handleGoogleLogin} variant="danger" className='btn  btn-primary text-white mb-5'> Google Login</button>
                         <p className='mt-3 p-2'>New to the website, Please <Link to="/register " className='btn btn-link text-white'>Register</Link></p>
+                        <p className='text-red-600 p-3'><small> {error}</small></p>
                     </div>
                 </div>
             </div>

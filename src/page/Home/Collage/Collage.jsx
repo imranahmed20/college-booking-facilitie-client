@@ -4,7 +4,7 @@ import Card from '../Card/Card';
 const Collage = () => {
     const [collage, setCollage] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/collage')
+        fetch('https://collage-booking-server-ecru.vercel.app/collage')
             .then(res => res.json())
             .then(data => {
                 setCollage(data)
